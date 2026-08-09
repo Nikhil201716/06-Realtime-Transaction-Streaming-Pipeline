@@ -1,0 +1,39 @@
+{
+  "total_events": 415,
+  "total_fraud_events": 44,
+  "total_flagged": 36,
+  "confusion_matrix": {
+    "true_positive": 35,
+    "false_positive": 1,
+    "false_negative": 9,
+    "true_negative": 370
+  },
+  "precision": 0.972,
+  "recall": 0.795,
+  "f1_score": 0.875,
+  "by_scenario": [
+    {
+      "scenario_label": "account_takeover",
+      "total": 6,
+      "caught": 6,
+      "catch_rate": 100.0
+    },
+    {
+      "scenario_label": "card_testing",
+      "total": 23,
+      "caught": 14,
+      "catch_rate": 60.9
+    },
+    {
+      "scenario_label": "stolen_card_spree",
+      "total": 15,
+      "caught": 15,
+      "catch_rate": 100.0
+    }
+  ],
+  "latency": {
+    "avg_latency_ms": 6.2,
+    "p95_latency_ms": 21.1,
+    "max_latency_ms": 30.4
+  }
+}

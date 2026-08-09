@@ -1,0 +1,18 @@
+numpy>=2.0
+pandas>=2.2
+duckdb>=1.5
+redis>=5.0
+streamlit>=1.35
+plotly>=5.22
+ollama>=0.6
+
+# NOTE: Redis itself is NOT a pip package. This project runs a real
+# Redis server compiled from official source (download.redis.io) inside
+# WSL - see README Section 9 for why (a Windows-native alternative,
+# Memurai, hit an installer bug on this machine) and docs/wsl_redis_setup.md
+# for the exact steps.
+#
+# NOTE: the AI explanation feature also requires Ollama (a separate
+# application, not a pip package) with the qwen2.5:0.5b model pulled:
+#   winget install Ollama.Ollama
+#   ollama pull qwen2.5:0.5b
