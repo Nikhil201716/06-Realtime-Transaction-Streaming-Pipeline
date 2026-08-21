@@ -1,9 +1,9 @@
 # Real-Time Transaction Fraud Streaming Pipeline
 
-**A Data Engineer / AI Engineer portfolio project:** a genuine real-time event-streaming pipeline —
+**A project I built to learn stream processing and real-time decisioning:** a genuine real-time event-streaming pipeline —
 Redis Streams with consumer groups, a Redis Sorted Set velocity tracker, rules-based fraud scoring,
 and a local LLM that turns an alert's raw reasons into an analyst-readable explanation — built to
-prove actual streaming-system skills, not a batch job dressed up with a "real-time" label.
+learn how streaming systems actually behave, rather than dressing a batch job up with a "real-time" label.
 
 > Built by Nikhil Sinha. Every number in this README is from a real, measured pipeline run — a live
 > Redis server, a live producer emitting events one at a time, a live consumer group reading and
@@ -25,7 +25,7 @@ in plain English — end-to-end, measured in single-digit milliseconds.
 
 ---
 
-## 2. What Makes This "Industry-Level," Not a Tutorial Clone
+## 2. What I Was Trying to Get Right
 
 - **A real message broker with real durability guarantees** — Redis Streams consumer groups
   (`XREADGROUP`/`XACK`), not a Python list standing in for a queue. If the consumer crashed
@@ -303,7 +303,7 @@ actively watching.
 
 ---
 
-## 10. Skills Demonstrated
+## 10. What I Learned Building This
 
 Real-Time Stream Processing · Redis Streams & Consumer Groups (`XADD`/`XREADGROUP`/`XACK`) · Redis
 Sorted Sets for Sliding-Window Rate Tracking · Event-Driven Architecture · Rules-Based Fraud
